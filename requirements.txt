@@ -1,0 +1,15 @@
+
+nltk
+spacy
+gensim
+numpy
+pandas
+scikit-learn
+keras
+tensorflow
+torch
+seaborn
+matplotlib
+lightgbm
+contractions
+streamlit
