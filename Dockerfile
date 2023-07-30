@@ -8,4 +8,5 @@ RUN pip3 install -r requirements.txt
 
 COPY . .
 
-CMD streamlit run --server.port 8080 --server.enableCORS false app.py
+CMD streamlit run --server.port 8080 --server.enableCORS false --global.development.watch=False app.py
+
