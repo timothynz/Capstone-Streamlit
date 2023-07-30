@@ -1,4 +1,3 @@
-
 FROM python:3.10-slim-buster
 
 WORKDIR /app
@@ -8,5 +7,7 @@ RUN pip3 install -r requirements.txt
 
 COPY . .
 
-CMD streamlit run --server.port 8080 --server.enableCORS false --global.development.watch=False app.py
+ENV WATCHDOG_USE_POLLING=True
+
+CMD streamlit run --server.port 8080 --server.enableCORS false app.py
 
